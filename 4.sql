@@ -1,0 +1,1 @@
+select first_name, last_name,birth_date  from employees where birth_date = (select MAX(birth_date) from employees) AND gender='F'

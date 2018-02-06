@@ -1,0 +1,1 @@
+select first_name, last_name,birth_date  from employees where birth_date = (select MIN(birth_date) from employees)
